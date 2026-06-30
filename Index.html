@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aroma Cafe</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#fdfaf6;
+    color:#333;
+    line-height:1.6;
+}
+
+header{
+    background:#6f4e37;
+    color:white;
+    padding:20px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+header h1{
+    font-size:30px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:20px;
+}
+
+.hero{
+    background:url('https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=1600&q=80') center/cover;
+    height:85vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+}
+
+.hero-content{
+    background:rgba(0,0,0,0.5);
+    padding:40px;
+    border-radius:10px;
+}
+
+.hero h2{
+    font-size:50px;
+    margin-bottom:15px;
+}
+
+.hero p{
+    font-size:20px;
+    margin-bottom:20px;
+}
+
+.btn{
+    display:inline-block;
+    padding:12px 25px;
+    background:#d4a373;
+    color:white;
+    text-decoration:none;
+    border-radius:5px;
+}
+
+section{
+    padding:60px 8%;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:40px;
+    font-size:35px;
+    color:#6f4e37;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:white;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+    text-align:center;
+}
+
+.offer{
+    background:#6f4e37;
+    color:white;
+    text-align:center;
+    border-radius:10px;
+}
+
+.review{
+    font-style:italic;
+}
+
+.contact{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:30px;
+}
+
+iframe{
+    width:100%;
+    height:300px;
+    border:0;
+}
+
+footer{
+    background:#333;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+.whatsapp{
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    background:#25D366;
+    color:white;
+    padding:15px 20px;
+    border-radius:50px;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+@media(max-width:768px){
+
+.hero h2{
+font-size:35px;
+}
+
+.contact{
+grid-template-columns:1fr;
+}
+
+header{
+flex-direction:column;
+}
+
+nav{
+margin-top:15px;
+}
+
+nav a{
+display:inline-block;
+margin:10px;
+}
+}
+</style>
+
+</head>
+<body>
+
+<header>
+<h1>☕ Aroma Cafe</h1>
+
+<nav>
+<a href="#about">About</a>
+<a href="#menu">Menu</a>
+<a href="#offers">Offers</a>
+<a href="#reviews">Reviews</a>
+<a href="#contact">Contact</a>
+</nav>
+
+</header>
+
+<section class="hero">
+<div class="hero-content">
+<h2>Fresh Coffee, Fresh Moments</h2>
+<p>Your cozy coffee destination near campus.</p>
+<a href="#contact" class="btn">Visit Today</a>
+</div>
+</section>
+
+<section id="about">
+<h2 class="section-title">About Us</h2>
+
+<p style="text-align:center;max-width:800px;margin:auto;">
+Aroma Cafe is a warm and welcoming coffee shop where students, families,
+and local residents gather to enjoy handcrafted coffee, delicious snacks,
+and a relaxing atmosphere with free Wi-Fi.
+</p>
+
+</section>
+
+<section id="menu">
+
+<h2 class="section-title">Menu Highlights</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>☕ Cappuccino</h3>
+<p>$3.50</p>
+</div>
+
+<div class="card">
+<h3>🥐 Croissant</h3>
+<p>$2.00</p>
+</div>
+
+<div class="card">
+<h3>🍰 Chocolate Cake</h3>
+<p>$4.00</p>
+</div>
+
+<div class="card">
+<h3>🥤 Cold Coffee</h3>
+<p>$3.80</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="offers">
+
+<h2 class="section-title">Daily Offers</h2>
+
+<div class="card offer">
+<h3>Buy 1 Coffee Get 1 Free</h3>
+<p>Every Monday | 8 AM - 11 AM</p>
+</div>
+
+</section>
+
+<section id="reviews">
+
+<h2 class="section-title">Customer Reviews</h2>
+
+<div class="cards">
+
+<div class="card review">
+⭐⭐⭐⭐⭐
+<p>"Best coffee near campus!"</p>
+<strong>- Sarah</strong>
+</div>
+
+<div class="card review">
+⭐⭐⭐⭐⭐
+<p>"Amazing ambience and friendly staff."</p>
+<strong>- James</strong>
+</div>
+
+<div class="card review">
+⭐⭐⭐⭐⭐
+<p>"Perfect place to study."</p>
+<strong>- Emma</strong>
+</div>
+
+</div>
+
+</section>
+
+<section id="contact">
+
+<h2 class="section-title">Find Us</h2>
+
+<div class="contact">
+
+<div>
+
+<h3>Contact Information</h3>
+
+<p><strong>Address:</strong> 123 College Street</p>
+
+<p><strong>Phone:</strong> +1 234 567 890</p>
+
+<p><strong>Email:</strong> hello@aromacafe.com</p>
+
+<br>
+
+<a class="btn" href="https://wa.me/1234567890">Chat on WhatsApp</a>
+
+</div>
+
+<div>
+
+<iframe
+src="https://www.google.com/maps?q=coffee+shop&output=embed">
+</iframe>
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+<p>© 2025 Aroma Cafe | Fresh Coffee • Great Friends</p>
+
+</footer>
+
+<a href="https://wa.me/1234567890" class="whatsapp">
+WhatsApp
+</a>
+
+</body>
+</html>
